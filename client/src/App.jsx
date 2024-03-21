@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import DashboardPage from "./pages/Dashboard";
 import Header from './components/Header';
+import FooterCom from './components/Footer';
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
         <Route exact path="/signup" element={<Signup />} />
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/dashboard" element={<DashboardPage />} />
+
       </Routes>
+      <FooterCom />
     </Router>
     </>
   )
